@@ -1,0 +1,15 @@
+cat << 'EOF' > .gitignore
+# Datos con datos personales (NUNCA SUBIR)
+datos/raw/
+datos/interim/
+datos/clean/
+
+# Entorno y secretos
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Ficheros de sistema
+.DS_Store
+EOF
