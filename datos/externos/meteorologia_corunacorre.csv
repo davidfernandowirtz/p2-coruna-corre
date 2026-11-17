@@ -1,0 +1,7 @@
+id_carrera,fecha,temp_media_c,temp_max_c,temp_min_c,precipitacion_mm,viento_max_kmh,hubo_lluvia,fuente_meteo,estacion_referencia,fecha_consulta_api
+carrera_01,2026-03-14,10.7,12.6,9.2,8.3,19.2,True,Open-Meteo Historical Archive API (ERA5),"A Coruña (43.3623 N, -8.4115 W)",2026-11-17T19:44:47.388203
+carrera_02,2026-04-12,9.5,13.2,6.1,2.3,21.2,True,Open-Meteo Historical Archive API (ERA5),"A Coruña (43.3623 N, -8.4115 W)",2026-11-17T19:44:47.388203
+carrera_03,2026-05-10,13.3,16.5,11.2,14.7,14.5,True,Open-Meteo Historical Archive API (ERA5),"A Coruña (43.3623 N, -8.4115 W)",2026-11-17T19:44:47.388203
+carrera_04,2026-05-31,17.2,21.5,12.1,0.0,16.7,False,Open-Meteo Historical Archive API (ERA5),"A Coruña (43.3623 N, -8.4115 W)",2026-11-17T19:44:47.388203
+carrera_05,2026-09-13,22.4,32.6,13.9,0.0,14.1,False,Open-Meteo Historical Archive API (ERA5),"A Coruña (43.3623 N, -8.4115 W)",2026-11-17T19:44:47.388203
+carrera_06,2026-10-25,17.2,20.8,14.9,0.6,24.2,True,Open-Meteo Historical Archive API (ERA5),"A Coruña (43.3623 N, -8.4115 W)",2026-11-17T19:44:47.388203
