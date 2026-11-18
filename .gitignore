@@ -1,0 +1,6 @@
+
+/datos/raw/
+/.env
+/datos/interim/
+/datos/clean/
+/.venv/
