@@ -1,6 +1,13 @@
-
+# Datos locales
+/datos/raw/
 /datos/interim/
-
-/.env
-
 /datos/clean/
+
+# Secretos y entorno
+/.env
+/.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
