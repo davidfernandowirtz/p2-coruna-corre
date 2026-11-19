@@ -1,35 +1,36 @@
-## As entregas para cada destinatario
+## Las entregas para cada destinatario
 
-A partir da táboa limpa e pseudonimizada (`datos/clean/participacions.csv`), xeráronse tres saídas diferenciadas en `output/` no caderno `04_analisis_base.ipynb`, adaptando o nivel de detalle aos requisitos de privacidade de cada un.
+A partir de la tabla limpia y pseudonimizada (`datos/clean/participacions.csv`), se generaron tres salidas diferenciadas en `output/` en el cuaderno `04_analisis_base.ipynb`, adaptando el nivel de detalle a los requisitos de privacidad de cada uno.
 
-| Destinatario | Ficheiro xerado (`output/`) | Nivel de agregación / privacidade aplicada | Xustificación |
+| Destinatario | Fichero generado (`output/`) | Nivel de agregación / privacidad aplicada | Justificación |
 | :--- | :--- | :--- | :--- |
-| **Prensa / Web municipal** | `output_prensa_agregado.csv` | **Táboas agregadas** por carreira, sexo e categoría de idade (número de participantes e estatísticos de tempo). | Permite publicar resultados e evolución da participación sen incluír rexistros individuais, pseudónimos nin combinacións que identifiquen a ningunha persoa. |
-| **Investigación deportiva** | `output_investigacion_kanon.csv` | **Datos fila a fila** co identificador pseudónimo (`persoa_id`) e **cuasi-identificadores xeneralizados** (agrupación de categorías minoritarias/especiais). Calcúlase e documéntase o nivel de **$k$-anonimato** (`k = [valor_k]`). | Facilita estudos lonxitudinais de rendemento minimizando o risco de reidentificación en grupos pequenos.|
-| **Organización do circuíto** | `output_organizacion_gestion.csv` | **Datos operativos de seguimento** por corredor pseudonimizado (`persoa_id`, carreiras disputadas, tipo de inscrición, tempos e postos). | Inclúe unicamente os campos necesarios para auditar a participación e xestionar o circuíto.|
+| **Prensa / Web municipal** | `output_prensa_agregado.csv` | **Tablas agregadas** por carrera, sexo y categoría de edad (número de participantes y estadísticos de tiempo). | Permite publicar resultados y evolución de la participación sin incluir registros individuales, pseudónimos ni combinaciones que identifiquen a ninguna persona. |
+| **Investigación deportiva** | `output_investigacion_kanon.csv` | **Datos fila a fila** con el identificador pseudónimo (`persoa_id`) y **cuasi-identificadores generalizados** (agrupación de categorías minoritarias/especiales). Se calcula y documenta el nivel de **$k$-anonimato** (`k = [valor_k]`). | Facilita estudios longitudinales de rendimiento minimizando el riesgo de reidentificación en grupos pequeños. |
+| **Organización del circuito** | `output_organizacion_gestion.csv` | **Datos operativos de seguimiento** por corredor pseudonimizado (`persoa_id`, carreras disputadas, tipo de inscripción, tiempos y puestos). | Incluye únicamente los campos necesarios para auditar la participación y gestionar el circuito. |
 
 ---
 
-## Partes opcionais realizadas
+## Partes opcionales realizadas
 
-### Opcional 03: Comparativa coa edición anterior (`07_opcional_edicion_anterior.ipynb`)
+### Opcional 03: Comparativa con la edición anterior (`07_opcional_edicion_anterior.ipynb`)
+
 ---
 
 ## Presentación
 
-* **Ligazón ao documento de defensa:** [`presentacion/presentacion.pdf`](presentacion/presentacion.pdf).
+- **Enlace al documento de defensa:** [`presentacion/presentacion.pdf`](presentacion/presentacion.pdf).
 
 ---
 
-## Reparto do traballo
+## Reparto del trabajo
 
-* **David — Análise exploratoria, saídas por destinatario, Opcional 03 e documentación:**
-  * Deseño e execución da análise base de participación, repetición e rendemento (`04_analisis_base.ipynb`), definindo denominadores, universos de abandono e percentiles relativos por sexo/carreira.
-  * Xeración e validación de privacidade das tres entregas diferenciadas en `output/` (prensa, investigación con $k$-anonimato e organización).
-  * Desenvolvemento completo da **Opcional 03 (Edición anterior)** en `07_opcional_edicion_anterior.ipynb` reutilizando `src/scraping.py` e `src/limpieza.py`.
+- **David — Análisis exploratorio, salidas por destinatario, Opcional 03 y documentación:**
+  - Diseño y ejecución del análisis base de participación, repetición y rendimiento (`04_analisis_base.ipynb`), definiendo denominadores, universos de abandono y percentiles relativos por sexo/carrera.
+  - Generación y validación de privacidad de las tres entregas diferenciadas en `output/` (prensa, investigación con $k$-anonimato y organización).
+  - Desarrollo completo de la **Opcional 03 (Edición anterior)** en `07_opcional_edicion_anterior.ipynb` reutilizando `src/scraping.py` y `src/limpieza.py`.
 
 ---
 
-## Uso da IA
+## Uso de la IA
 
-* **Ferramentas e finalidade:** Empregouse un asistente de IA como apoio técnico para estruturar funcións de agregación en `pandas`, revisar expresións de cálculo de percentís e $k$-anonimato e organización da documentación
+- **Herramientas y finalidad:** Se empleó un asistente de IA como apoyo técnico para estructurar funciones de agregación en `pandas`, revisar expresiones de cálculo de percentiles y $k$-anonimato, y organización de la documentación.
