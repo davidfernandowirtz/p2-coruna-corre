@@ -90,6 +90,8 @@ Los dos grupos pueden solaparse. Las coincidencias por nombre son aproximadas, y
 
 ### Opcional 03: Comparativa con la edición anterior (`07_opcional_edicion_anterior.ipynb`)
 
+### Opcional 04: Clasificación (`08_opcional_clasificacion.ipynb`)
+
 ---
 
 ## Presentación
@@ -108,6 +110,7 @@ Los dos grupos pueden solaparse. Las coincidencias por nombre son aproximadas, y
   - Diseño y ejecución del análisis base de participación, repetición y rendimiento (`04_analisis_base.ipynb`), definiendo denominadores, universos de abandono y percentiles relativos por sexo/carrera.
   - Generación y validación de privacidad de las tres entregas diferenciadas en `output/` (prensa, investigación con $k$-anonimato y organización).
   - Desarrollo completo de la **Opcional 03 (Edición anterior)** en `07_opcional_edicion_anterior.ipynb` reutilizando `src/scraping.py` y `src/limpieza.py`.
+  - Desarrollo completo de la **Opcional 04 (Clasificación)** en `08_opcional_clasificacion.ipynb`.
 - **Javier — Calidad, limpieza, integración y Opcional 02:**
   - Preparación y ejecución de los notebooks `02_calidad_limpieza.ipynb` y `03_integracion_pseudonimizacion.ipynb`, con perfil de calidad por carrera, documentación de incidencias y auditoría del enlace de personas.
   - Generación de `participacions.csv` y `carreiras.csv` para el análisis y elaboración del diccionario de datos ([issue #5](https://github.com/davidfernandowirtz/p2-coruna-corre/issues/5), [PR #9](https://github.com/davidfernandowirtz/p2-coruna-corre/pull/9)).
