@@ -1,18 +1,9 @@
-
-"""Limpieza de resultados. Replica la lógica del notebook 02 (Persona 2)
-para que todas las ediciones se limpien con los mismos criterios."""
 import pandas as pd
 
 UMBRAL_REVISAR_SEGUNDOS = 7200  # criterio provisional del notebook 02
 
 
 def limpiar_resultados(res):
-    """Separa puestos compuestos, convierte tiempos a segundos y marca su estado.
-
-    res: DataFrame con columnas de texto puesto, puesto_sexo, puesto_categoria
-    y tiempo_oficial (leído con dtype=str y keep_default_na=False).
-    No elimina filas: devuelve una columna por cada dato separado.
-    """
     puesto = res["puesto"].str.strip()
     sexo = res["puesto_sexo"].str.strip().str.upper()
     categoria = (

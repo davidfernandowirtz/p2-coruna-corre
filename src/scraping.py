@@ -1,14 +1,3 @@
-
-"""Funciones reutilizables para extraer resultados de corunacorre.com.
-
-La lógica es la misma para cualquier edición. Lo que cambia entre ediciones
-(idioma de la URL, formato de los enlaces a eventos, nombres de caché y
-prefijo de carrera) se pasa como configuración en un EdicionConfig.
-
-Buenas prácticas aplicadas (enunciado 4.3): User-Agent propio, pausa mínima
-entre peticiones, caché de bytes en raw_dir y recorrido de todas las páginas
-sin saber de antemano cuántas hay.
-"""
 import re
 import time
 from dataclasses import dataclass
@@ -29,7 +18,6 @@ EXCLUIR_CATEGORIAS = (
 
 @dataclass(frozen=True)
 class EdicionConfig:
-    """Parámetros que cambian de una edición a otra."""
 
     num_edicion: int
     idioma: str            # "gl" o "es": prefijo de las URLs
@@ -74,7 +62,6 @@ def parsear_pagina_resultados(html_bytes, id_carrera, num_pagina):
 
 
 class Scraper:
-    """Descarga con caché y recorre una edición del circuito."""
 
     def __init__(self, cfg, pausa=PAUSA, user_agent=USER_AGENT, verbose=True):
         self.cfg = cfg
@@ -98,7 +85,6 @@ class Scraper:
         return resp.content
 
     def descubrir_carreras_absoluta(self):
-        """edición -> eventos -> categoría Absoluta (localizada por el texto del enlace)."""
         cfg = self.cfg
         url_eventos = (
             f"{cfg.base_url}/{cfg.idioma}/web/resultado/"
@@ -153,10 +139,7 @@ class Scraper:
         return carreras
 
     def extraer_carrera(self, id_carrera, url_absoluta, tam_pagina=TAM_PAGINA):
-        """Recorre todas las páginas de una categoría. Devuelve (DataFrame, nº de páginas).
-
-        Un error de red o de parseo se propaga: no se corta la carrera en silencio.
-        """
+       
         filas_carrera, previos, pagina, paginas_ok = [], set(), 1, 0
         while True:
             nombre_raw = f"{id_carrera}_pag_{pagina:02d}.html"
